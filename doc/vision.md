@@ -35,9 +35,10 @@ llmstart-homework/
 ├── tests/              # Тесты (pytest)
 │   ├── test_basic.py
 │   └── test_link_parser.py  # Тесты для парсера ссылок
-├── requirements.uv     # Зависимости для uv
+├── pyproject.toml      # Конфигурация проекта и зависимостей (uv)
 ├── Makefile            # Автоматизация
 ├── Dockerfile          # Деплой
+├── .env                # Файл с переменными окружения и конфигурацией 
 ├── README.md
 └── doc/
     ├── product_idea.md
@@ -173,8 +174,8 @@ print(log_entry)
 1. **Dockerfile**  
    - Устанавливает Python 3.11+.  
    - Копирует исходный код бота.  
-   - Устанавливает зависимости из `requirements.uv`.  
-   - Настраивает запуск бота через uvicorn.  
+   - Устанавливает зависимости из `pyproject.toml` через `uv`.  
+   - Настраивает запуск бота.  
 
 2. **Makefile**  
    - Упрощает сборку и запуск Docker-контейнера:  
