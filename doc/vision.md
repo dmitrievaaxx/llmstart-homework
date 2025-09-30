@@ -43,6 +43,7 @@ llmstart-homework/
 └── doc/
     ├── product_idea.md
     └── vision.md
+    └── conventions.md
 ```
 ---
 
